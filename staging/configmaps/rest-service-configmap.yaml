@@ -6,3 +6,8 @@ metadata:
 data:
   auth_service_url: http://auth-internal-service.staging.svc.cluster.local:8000
   post_service_url: http://post-internal-service.staging.svc.cluster.local:8000
+  otel-service-name: staging-rest-service
+  otel-exporter-insecure: "true"
+  otel-exporter-endpoint: http://jaeger.observability.svc.cluster.local:4317
+  otel-metrics-exporter: none
+  otel-logs-exporter: none

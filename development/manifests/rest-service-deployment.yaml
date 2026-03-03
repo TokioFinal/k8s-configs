@@ -40,6 +40,35 @@ spec:
              configMapKeyRef:
                 name: rest-service-configmap
                 key: post_service_url
+          - name: OTEL_SERVICE_NAME
+            valueFrom:
+             configMapKeyRef:
+                name: rest-service-configmap
+                key: otel-service-name
+
+          - name: OTEL_EXPORTER_OTLP_ENDPOINT
+            valueFrom:
+             configMapKeyRef:
+                name: rest-service-configmap
+                key: otel-exporter-endpoint
+          
+          - name: OTEL_EXPORTER_OTLP_INSECURE 
+            valueFrom:
+             configMapKeyRef:
+                name: rest-service-configmap
+                key: otel-exporter-insecure
+
+          - name: OTEL_METRICS_EXPORTER
+            valueFrom:
+             configMapKeyRef:
+                name: rest-service-configmap
+                key: otel-metrics-exporter
+
+          - name: OTEL_LOGS_EXPORTER
+            valueFrom:
+             configMapKeyRef:
+                name: rest-service-configmap
+                key: otel-logs-exporter
 
       imagePullSecrets:
       - name: regcred
