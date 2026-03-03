@@ -5,3 +5,8 @@ metadata:
   namespace: production
 data:
   auth_service_url: http://auth-internal-service.production.svc.cluster.local:8000
+  otel-service-name: production-post-service
+  otel-exporter-insecure: "true"
+  otel-exporter-endpoint: http://jaeger.observability.svc.cluster.local:4317
+  otel-metrics-exporter: none
+  otel-logs-exporter: none
