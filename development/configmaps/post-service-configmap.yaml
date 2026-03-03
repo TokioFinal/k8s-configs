@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: post-service-configmap
+  namespace: development
+data:
+  auth_service_url: http://auth-internal-service.development.svc.cluster.local:8000
