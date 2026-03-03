@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: post-service-configmap
+  namespace: staging
+data:
+  auth_service_url: http://auth-internal-service.staging.svc.cluster.local:8000
