@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: auth-service
-        image: tiagomadeiradock/tokio-auth-service:v1
+        image: tiagomadeiradock/tokio-auth-service:008c427
 
         imagePullPolicy: IfNotPresent
         resources:
