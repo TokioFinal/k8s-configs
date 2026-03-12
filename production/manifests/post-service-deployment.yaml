@@ -79,6 +79,6 @@ spec:
     app: post-service
   type: ClusterIP
   ports:
-    - port: 8000
+    - port: 8080
       protocol: TCP
       targetPort: http
