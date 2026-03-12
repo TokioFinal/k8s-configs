@@ -28,6 +28,11 @@ spec:
         ports:
           - containerPort: 8000
         env:
+          - name: DEBUG
+            valueFrom:
+             configMapKeyRef:
+                name: rest-service-configmap
+                key: debug
           - name: AUTH_SERVICE_URL
             valueFrom:
              configMapKeyRef:

@@ -31,6 +31,11 @@ spec:
             protocol: TCP
             containerPort: 8000
         env:
+          - name: DEBUG
+            valueFrom:
+             configMapKeyRef:
+                name: auth-service-configmap
+                key: debug
           - name: ACCESS_TOKEN_EXPIRE_MINUTES
             valueFrom:
              configMapKeyRef:

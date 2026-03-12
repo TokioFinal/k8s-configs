@@ -30,6 +30,11 @@ spec:
             protocol: TCP
             containerPort: 8000
         env:
+          - name: DEBUG
+            valueFrom:
+             configMapKeyRef:
+                name: post-service-configmap
+                key: debug
           - name: AUTH_SERVICE_URL
             valueFrom:
              configMapKeyRef:

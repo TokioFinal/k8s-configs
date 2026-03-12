@@ -11,3 +11,4 @@ data:
   otel-exporter-endpoint: http://jaeger.observability.svc.cluster.local:4317
   otel-metrics-exporter: none
   otel-logs-exporter: none
+  debug: "true"
