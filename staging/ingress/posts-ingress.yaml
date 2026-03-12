@@ -14,7 +14,7 @@ spec:
           service:
             name: rest-internal-service
             port: 
-              number: 8000
+              number: 80
   ingressClassName: nginx
 
 ---
