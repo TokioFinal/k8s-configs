@@ -4,8 +4,12 @@ metadata:
   name: posts-ingress
   namespace: production
 spec:
+  tls:
+    - secretName: posts-com-tls
+      hosts:
+        - posts.com
   rules:
-  - host: production.posts.com
+  - host: posts.com
     http:
       paths:
       - pathType: Prefix
