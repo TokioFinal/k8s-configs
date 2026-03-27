@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: post-service
-        image: tiagomadeiradock/tokio-post-service:481328f
+        image: tiagomadeiradock/tokio-post-service:25010e2
         imagePullPolicy: IfNotPresent
         resources:
           limits:
